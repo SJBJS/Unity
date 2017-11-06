@@ -9,7 +9,7 @@ public class CameraMV : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        speed = -1.0f;
+        speed = -6.0f;
     }
 
     // Update is called once per frame
