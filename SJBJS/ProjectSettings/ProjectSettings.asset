@@ -603,9 +603,15 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
+<<<<<<< HEAD
   cloudProjectId: 45ecb6cc-6398-4210-ae8f-f23f97f8c0a6
   projectName: GameProject171106
   organizationId: dlwjdtnrdjaa
+=======
+  cloudProjectId: 5454bcfb-1bb5-4f62-b6a1-b912352bb4cf
+  projectName: SJBJS (1)
+  organizationId: park-2207692
+>>>>>>> refs/remotes/origin/sh_hotfix
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
