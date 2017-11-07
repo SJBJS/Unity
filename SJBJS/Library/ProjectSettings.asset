@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 13
-  productGUID: bd22b09fe64e0fc4ca8c36a6c0238b85
+  productGUID: f4123dd2e4c029e4d873ff8ef5ab4d9b
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
@@ -12,7 +12,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: GameProject171106
+  productName: SJBJS
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -521,14 +521,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: GameProject171106
+  metroPackageName: SJBJS
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: GameProject171106
+  metroApplicationDescription: SJBJS
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 
@@ -599,19 +599,12 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled:
-    UNet: 1
+  cloudServicesEnabled: {}
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-<<<<<<< HEAD
-  cloudProjectId: 45ecb6cc-6398-4210-ae8f-f23f97f8c0a6
-  projectName: GameProject171106
-  organizationId: dlwjdtnrdjaa
-=======
-  cloudProjectId: 5454bcfb-1bb5-4f62-b6a1-b912352bb4cf
-  projectName: SJBJS (1)
-  organizationId: park-2207692
->>>>>>> refs/remotes/origin/sh_hotfix
+  cloudProjectId: 
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

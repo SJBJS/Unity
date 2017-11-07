@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/171106.unity
-=======
 - path: Assets/Scene/Stage01.unity
->>>>>>> refs/remotes/origin/sh_hotfix
   isLoaded: 1
   isActive: 1
