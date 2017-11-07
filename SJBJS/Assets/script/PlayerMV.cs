@@ -10,6 +10,10 @@ public class PlayerMV : MonoBehaviour
     private Rigidbody2D m_ri2d;
     private bool isJump = true;
 
+    [SerializeField]
+    private PolygonCollider2D [] m_collider;
+    private int m_collIdx = 0;
+
 
     // Use this for initialization
     void Start()
@@ -45,6 +49,13 @@ public class PlayerMV : MonoBehaviour
         {
             isJump = true;
         }
+    }
+
+    public void SetColliderForSprite(int spriteNum)
+    {
+        m_collider[m_collIdx].enabled = false;
+        m_collIdx = spriteNum;
+        m_collider[m_collIdx].enabled = true;
     }
 
     void OnJump()
