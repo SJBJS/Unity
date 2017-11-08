@@ -45,9 +45,6 @@ public class SpwanGround : MonoBehaviour {
             GameObject ground23 = Instantiate(ground, new Vector3(Random.Range(10f, 25f),    0f, -1.0f), Quaternion.identity);
             GameObject ground24 = Instantiate(ground, new Vector3(Random.Range(10f, 25f),    0f, -1.0f), Quaternion.identity);
             GameObject ground25 = Instantiate(ground, new Vector3(Random.Range(10f, 25f),    0f, -1.0f), Quaternion.identity);
-            GameObject ground26 = Instantiate(ground, new Vector3(Random.Range(30f, 50f), 0f, -1.0f), Quaternion.identity);
-            GameObject ground27 = Instantiate(ground, new Vector3(Random.Range(55f, 70f), 0f, -1.0f), Quaternion.identity);
-            GameObject ground28 = Instantiate(ground, new Vector3(Random.Range(70f, 80f), 0f, -1.0f), Quaternion.identity);
 
         }
     }

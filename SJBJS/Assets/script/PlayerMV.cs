@@ -4,35 +4,26 @@ using UnityEngine;
 
 public class PlayerMV : MonoBehaviour
 {
-    public float speed; //이동 속도.
-    public float jumpfoace;
-    public float grivityScale; // 중력 적용 배율.
-    public bool isDebugMode;
+    public float speed = -6.0f; //이동 속도
+    public float jumpfoace = 5.0f;
+
     private Rigidbody2D m_ri2d;
     private bool isJump = true;
 
     [SerializeField]
-    private PolygonCollider2D[] m_collider;
+    private PolygonCollider2D [] m_collider;
     private int m_collIdx = 0;
 
-    CheckGround checkGround;
+
     // Use this for initialization
-    void Awake()
+    void Start()
     {
         m_ri2d = GetComponent<Rigidbody2D>();
-        m_ri2d.gravityScale = grivityScale;
-        checkGround = GetComponent<CheckGround>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.
-        if (isDebugMode)
-        {
-            Debug.Log(checkGround.IsGrounded());
-            m_ri2d.gravityScale = grivityScale;
-        }
         //왼쪽방향으로 speed만큼 이동하게됩니다.
         transform.Translate(Vector2.right * speed * Time.deltaTime);
 
@@ -43,16 +34,16 @@ public class PlayerMV : MonoBehaviour
             transform.position = new Vector2(0, 0);
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump"))
         {
             OnJump();
         }
-
+        
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        if(collision.gameObject.tag == "Ground")
         {
             isJump = true;
         }
@@ -67,12 +58,13 @@ public class PlayerMV : MonoBehaviour
 
     void OnJump()
     {
-        if (!checkGround.IsGrounded())
+        if(!isJump)
         {
             return;
         }
-        m_ri2d.AddForce(transform.up * jumpfoace, ForceMode2D.Impulse);
 
+        m_ri2d.AddForce(transform.up * jumpfoace, ForceMode2D.Impulse);
+        
     }
 
     //플레이어가 죽을시 씬을 변경합니다.
