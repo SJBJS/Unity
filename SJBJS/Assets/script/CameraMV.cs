@@ -16,7 +16,7 @@ public class CameraMV : MonoBehaviour
     void Update()
     {
         //왼쪽방향으로 speed만큼 이동하게됩니다.
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
 
         //x좌표가 -12.8보다 작아지게 되면...
         if (transform.position.x < -12.8f)
