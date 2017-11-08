@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMV : MonoBehaviour
 {
-    public float speed; //이동 속도
-    public float jumpfoace;
+    public float speed = -6.0f; //이동 속도
+    public float jumpfoace = 5.0f;
 
     private Rigidbody2D m_ri2d;
     private bool isJump = true;
@@ -18,9 +18,7 @@ public class PlayerMV : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        speed = -6.0f;
         m_ri2d = GetComponent<Rigidbody2D>();
-        jumpfoace = 5.0f;
     }
 
     // Update is called once per frame
